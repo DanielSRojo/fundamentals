@@ -39,7 +39,8 @@ Processes inside a **cgroup** cannot exceed the resource limits assigned to it, 
 - Most modern distros default to it.
 - Stricter rules about delegation (who can create/manage sub-cgroups).
 
-> [!NOTE] Docker and Kubernetes support cgroups v2.
+> [!NOTE]
+> Docker and Kubernetes support cgroups v2.
 
 ## Where cgroups live
 
@@ -61,7 +62,8 @@ On v2:
 
 Controls are applied by writing to files in these directories.
 
-> [!NOTE] These files only exist in memory.
+> [!NOTE]
+> These files only exist in memory.
 
 ## v2 Example
 

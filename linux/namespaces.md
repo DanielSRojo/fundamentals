@@ -14,7 +14,8 @@ A namespace is simply a data structure in the kernel, and each process has refer
 - Different processes can be in different namespaces.
 - Processes inherit namespaces from their parents.
 
-> [!NOTE]  A "container" is just a group of processes whose namespace pointers all point to the same sets of namespaces.
+> [!NOTE]  
+> A "container" is just a group of processes whose namespace pointers all point to the same sets of namespaces.
 
 Namespaces are the reason containers can:
 
@@ -24,7 +25,8 @@ Namespaces are the reason containers can:
 - have different hostnames
 - run as root inside but stay unprivileged outside
 
-> [!NOTE] Not all namespace types create a full separated system. Some isolate only specific resources (UTS, TIME).
+> [!NOTE]
+> Not all namespace types create a full separated system. Some isolate only specific resources (UTS, TIME).
 
 ## Types of Namespaces
 
@@ -41,7 +43,8 @@ Linux currently has eight main namespace types:
 | **CGROUP** | Cgroup hierarchy | Your own cgroup subtree |
 | **TIME** | System clocks | Your own system time (monotonic & boot time offsets) |
 
-> [!NOTE] Mnemotip: UPNMICT (Ut's Probably Not Magic In Containers Today)
+> [!NOTE]
+> Mnemotip: UPNMICT (Ut's Probably Not Magic In Containers Today)
 
 User namespaces enable unprivileged containers.
 
